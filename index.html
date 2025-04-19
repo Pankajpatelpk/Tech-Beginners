@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Club Website</title>
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="reg.html"
+</head>
+
+<body>
+  <header>
+
+    <img src="techhlogo.jpg" alt="Club Logo" width="100">
+    <h1>Programming and Tech Skills Club</h1>
+    
+    <p>Empowering Innovation & Collaboration</p>
+    <a target="_blank" href="reg.html" class="btn">Join Us</a>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#vision-mission">Vision & Mission</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+  </header>
+  <section id=" about">
+    <h2>About Us</h2>
+    <p>
+      Programming and Techskill Club is a vibrant community for students and enthusiasts who are passionate about programming and technology. We welcome everyone, regardless of experience level, to explore, learn, and grow their tech skills together. Join us to connect, create, and innovate!
+    </p>
+  </section>
+  <section id="vision-mission">
+    <h2>Vision & Mission</h2>
+    <h3>Our Vision</h3>
+    <p>
+      To build an inclusive community where anyone, regardless of background or experience, can explore, learn, and thrive in programming and technology.
+    </p>
+    <h3>Our Mission</h3>
+    <p>
+      To empower beginners and aspiring technologists by providing accessible learning opportunities, hands-on experiences, and a supportive environment that encourages curiosity, collaboration, and innovation in programming and tech skills.
+    </p>
+  </section>
+  
+
+  <section class="team">
+    <h2>Our Team</h2>
+    <div class=" cards">
+        <div class="photo card">
+            <img src="vansh.jpg" alt="Member 1" width="150">
+            <h3>Vansh Kumar patel</h3>
+            <p>Leader</p>
+            <p>Leads the club with a vision for tech education and collaboration.</p>
+          </div>
+      <div class="photo card">
+        <img src="pankaj.png" alt="Member 1" width="150">
+        <h3>Pankaj Patel</h3>
+        <p>President</p>
+        <p>Leads the club with a vision for tech education and collaboration.</p>
+      </div>
+      <div class="photo card">
+        <img src="ashish.jpg" alt="Member 2" width="150">
+        <h3>Ashish Chauhan</h3>
+        <p>Vice President</p>
+        <p>Supports operations and helps organize major events.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="events">
+    <h2>Events</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Hackathon 2025</h3>
+        <p>Date: April 19, 2025</p>
+        <p>A 6-hour coding challenge with prizes and recognition.</p>
+      </div>
+      <div class="card">
+        <h3>AI ML And DL</h3>
+        <p>Date: April 19, 2025</p>
+        <p>Learn about AI ML  from industry experts in this hands-on workshop.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="resources">
+    <h2>Study Resources</h2>
+    <ul>
+      <li><a href="#">Web Development Guide</a></li>
+      <li><a href="#">Machine Learning Basics</a></li>
+      <li><a href="#">Git & GitHub Tutorial</a></li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <script>
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return false;
+      }
+      alert("Thank you for your message!");
+      return false; // Prevent actual submission
+    }
+  </script>
+</body>
+
+</html>
